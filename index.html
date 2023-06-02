@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy King</title>
+    <link rel="stylesheet" href="css\css/style.css">
+    <style>
+        body{
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            background: url('img.jpg');
+        }
+        .left{
+            display: inline-block;
+            border: 3px solid red;
+            position: absolute;
+            left: 37px;
+            top: 52px;
+            font-size:18px;
+            width: 80px;
+            
+           
+        }
+        .left img{
+            width: 79px;
+        }
+        .left div{
+            text-align: center;
+        }
+        .mid{
+            display: block;
+            
+            margin: 42px auto;
+            padding: 10px 10px;
+           width: 50%;
+        }
+        .right{
+            border: 3px solid yellow;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        
+        .btn{
+            background-color:whitesmoke;
+            
+            margin: 10px 10px;
+            padding: 5px 5px;
+            border-radius: 7px;
+            
+            
+        }
+        .btn:hover{
+            background-color: cornflowerblue;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 30px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 15px 15px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            color: rgb(45, 188, 195);
+            text-decoration: underline;
+        }
+        .container{
+           
+            margin: 79px 41px;
+            padding: 5px 24px;
+        }
+        .formgroup input{
+            width: 30%;
+            margin: 5px 72px;
+            padding:7px 107px ;
+            border: 1px solid black;
+            text-align: center;
+
+        }
+        .container h1{
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container button{
+            display: block;
+            width: 7%;
+            margin: 9px 335px;
+        }
+        .para {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--left for logo-->
+        <div class="left">
+            <img src="gym-logo.png" alt="remote image">
+            <div>ROLEX</div>
+        </div>
+        <!--mid for navbar-->
+        <div class="mid">
+
+         <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+         </ul>
+        </div>
+        <!--right for buttons-->
+        <button class="btn">Call us</button>
+        <button class="btn">Email us</button>
+        
+    </header>
+    <div class="container">
+        <h1>BEST GYM IN YOUR AREA</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your lacality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <button>Submit</button>
+            
+        </form>
+        <p class="para">
+            <h2>Address:</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam inventore necessitatibus tempore, recusandae optio.
+        </p>
+
+    </div>
+</body>
+</html>
