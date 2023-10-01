@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy King</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            background: url('img.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo div {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+        
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .navbar a:hover, .navbar a.active {
+            color: #2DC0C3;
+            text-decoration: underline;
+        }
+        
+        .btn {
+            background-color: whitesmoke;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: cornflowerblue;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .container h1 {
+            font-size: 36px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .formgroup input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .formgroup button {
+            background-color: #2DC0C3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .formgroup button:hover {
+            background-color: #1A8083;
+        }
+        
+        .para {
+            font-style: italic;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="gym-logo.png" alt="Logo">
+            <div>ROLEX</div>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <button class="btn">Call us</button>
+        <button class="btn">Email us</button>
+    </header>
+    <div class="container">
+        <h1>BEST GYM IN YOUR AREA</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="age" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="gender" placeholder="Enter your gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="locality" placeholder="Enter your locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="formgroup">
+                <button>Submit</button>
+            </div>
+        </form>
+        <p class="para">
+            <h2>Address:</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam inventore necessitatibus tempore, recusandae optio.
+        </p>
+    </div>
+</body>
+</html>
